@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    height: 52px;
+    background: $input-bg;
+    border: 1px solid $input-border;
+    border-radius: 6px;
+    position: relative;
+
+
+}
+
+.focus{
+    outline: none;
+    background: $input-bg;
+    border: 1px solid $brand;
+
+
+}
+
+.disabled{
+    background: $input-bg;
+    border: 1px solid $input-border-disabled;
+    pointer-events: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 12px;
+    gap: 8px;
+    width: 275px;
+    height: 52px;
+    outline: none;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+}
+
+.afterSlot {
+    position: absolute;
+    left: 270px;
+}

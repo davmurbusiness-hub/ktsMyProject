@@ -1,0 +1,123 @@
+@import "../../styles/variables";
+
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+
+.frameText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.paramsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+
+.paginationSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.allFilms {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+.listOfFilms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  justify-items: center;
+}
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .listOfFilms {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .paginationSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listOfFilms {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .frameText {
+    gap: 16px;
+  }
+}
