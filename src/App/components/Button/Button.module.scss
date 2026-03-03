@@ -1,0 +1,99 @@
+@use "../../styles/variables.scss" as *;
+
+
+
+.button {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    padding: 14px 20px;
+
+    border-radius: $border_radius;
+    border: 1px solid transparent; // прозрачный бордер
+    background: $brand;
+    box-sizing: border-box;
+
+    &:hover {
+        color: white;
+        background: $brand-hover;
+        border: 1px solid transparent;
+    }
+
+    &:active {
+        color: white;
+        background-color: $active;
+        border: 1px solid transparent;
+    }
+}
+
+.outline {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    padding: 14px 20px;
+
+    border-radius: $border_radius;
+    border: 1px solid transparent;
+    background: none;
+    box-sizing: border-box;
+
+    border: $brand 1px solid;
+
+    &:hover {
+        background: $brand-hover;
+        color: white;
+        border: $brand-hover 1px solid;
+    }
+
+    &:active {
+        background: $active;
+        border: $active 1px solid;
+    }
+}
+
+
+button:disabled {
+    pointer-events: none;
+    color: white;
+}
+
+.button_disabled {
+    background: $disabled;
+}
+
+button:focus {
+    outline: none;
+    color: white;
+}
+
+button:focus,
+button:active,
+button:focus-visible {
+    color: white;
+    outline: none !important;
+}
+
+
+
+.text-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    color: white;
+    &-outline{
+        color: $brand;
+    }
+    &-white{
+        color: white;
+    }
+}
+
+.loader_red {
+    color: $brand;
+}

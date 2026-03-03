@@ -1,0 +1,54 @@
+
+.root {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameText{
+  font-size: 32px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 30%;
+  max-width: 600px;
+  min-width: 300px;
+
+  padding: clamp(40px, 8vw, 100px) clamp(20px, 5vw, 75px);
+
+  border: 1px solid gray;
+  border-radius: 12px;
+  gap: clamp(20px, 4vw, 30px);
+
+
+  @media (max-width: 480px) {
+    .nameText{
+      font-size: 24px;
+    }
+    padding: 30px 15px;
+    gap: 15px;
+  }
+
+
+  @media (min-width: 1200px) {
+
+    max-width: 700px;
+    padding: 100px 80px;
+  }
+}
+
+
+
+.regText{
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}

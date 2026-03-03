@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+
+.checkBox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border-radius: 6px;
+    border: 1px solid $checkbox-border;
+
+    background: $checkbox-bg;
+
+    top: -11px;
+    left: -10px;
+
+    box-sizing: border-box;
+
+    width: 40px;
+    height: 40px;
+
+
+    position: absolute;
+    outline: none;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.checkBox:hover {
+    border: $brand solid 1px;
+    background: $checkbox-bg-hover;
+}
+
+.checkBox:disabled {
+    background: rgba(20, 20, 20, 0.5);
+    border-color: $check-disabled;
+
+}
+
+//.checkBox:disabled:hover {
+//    border: none;
+//}
+
