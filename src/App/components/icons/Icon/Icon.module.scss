@@ -1,0 +1,30 @@
+@use "../../../styles/variables.scss" as *;
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.icon_color_primary {
+  color: $primary;
+}
+
+.icon_color_secondary {
+  color: $secondary;
+}
+
+.icon_color_white {
+  color: white;
+}
+
+.icon_color_accent {
+  color: $brand;
+}
+
+.icon_color_yellow {
+  color: #F5C518;
+}
+.icon_color_disabled {
+  color: $check-disabled;
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "vite/client"
+    ],
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "components/*": ["App/components/*"],
+      "config/*": ["config/*"],
+      "styles/*": ["App/styles/*"],
+      "utils/*": ["App/utils/*"],
+      "hooks/*": ["App/hooks/*"],
+      "api/*": ["App/api/*"],
+      "types/*": ["App/types/*"],
+      "store/*": ["App/store/*"],
+      "pages/*": ["App/pages/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "include": ["src/**/*"]
+}
